@@ -177,22 +177,68 @@ body {
       .device.on {
         opacity: 1;
       }
+
+
+
+.device .value {
+          position: absolute;
+          top: 15px;
+          right: 12px;
+          width: 100%;
+          font-size: 22px;
+          font-weight: 300;
+          vertical-align: text-top;
+          overflow: hidden;
+          white-space: normal;
+          text-overflow: ellipsis;
+          -webkit-user-select: none;
+          color: black;
+          text-align: right;
+        }
+        #decimal {
+          font-size: 15px;
+          vertical-align: text-top;
+          -webkit-user-select: none;
+        }
+        .device .value.hidden {
+          visibility: hidden;
+        }
+
+        .device.alarm {
+          background-color: orange;
+        }
+        .device.away {
+          opacity: 0.5;
+        }
+        .device.day {
+          opacity: 0.5;
+        }
+        .device.push {
+          background-color: grey;
+        }
+        .device.push-long {
+          background-color: darkgrey;
+        }
+
         .device .icon {
-          width: 90px;
-          height: 90px;
+          width: 95px;
+          height: 95px;
           background: black;
-          margin-bottom: 6px;
+          position: absolute;
+          top: 10px;
+          left: 10px;
           -webkit-mask-size: contain;
           -webkit-mask-repeat: no-repeat;
           -webkit-mask-position: center center;
         }
         .device .name {
           width: 100%;
-          font-size: 28px;
-          height: 64px;
-          line-height: 32px;
+          font-size: 22px;          
           font-weight: 700;
           overflow: hidden;
           white-space: normal;
           text-overflow: ellipsis;
+          position: absolute;
+          left: 10px;
+          bottom: 15px;
         }
